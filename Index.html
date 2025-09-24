@@ -1,11 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ElectroMart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="./Images/Logo.png">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./Css/home.css">
 </head>
+
 <body>
-    
+    <nav class="navbar">
+        <!-- Left: Logo -->
+        <div class="navbar-logo">
+            <a href="./index.html">
+                <img src="./Images/Logo.png" alt="ElectroMart Logo" class="navbar-logo-img">
+                ElectroMart
+            </a>
+        </div>
+
+        <!-- Center: Links -->
+        <ul class="navbar-links">
+            <li><a href="./store.html">Store</a></li>
+            <li><a href="./accessories.html">Accessories</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./support.html">Support</a></li>
+        </ul>
+
+        <!-- Right: Font Awesome Icons -->
+        <div class="navbar-icons">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-btn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <a href="#" class="icon-link" aria-label="Login">
+                <i class="fas fa-user"></i>
+            </a>
+
+        </div>
+        <div class="login-modal" id="loginModal">
+            <div class="login-content">
+                <span class="close-modal" id="closeLogin">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span>ElectroMart</span></h1>
+            <p>Your one-stop shop for the latest electronics, gadgets, and accessories.</p>
+            <a href="./store.html" class="btn-primary">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- FEATURED CATEGORIES -->
+    <section class="categories">
+        <h2 class="section-title">Featured Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="./Images/laptops.jpg" alt="Laptops">
+                <h3>Laptops</h3>
+            </div>
+            <div class="category-card">
+                <img src="./Images/phones.jpg" alt="Smartphones">
+                <h3>Smartphones</h3>
+            </div>
+            <div class="category-card">
+                <img src="./Images/accessories.jpg" alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHT / BANNER -->
+    <section class="highlight">
+        <div class="highlight-content">
+            <h2>Exclusive Deals Every Week</h2>
+            <p>Grab unbeatable discounts on top brands. Limited time offers!</p>
+            <a href="./store.html" class="btn-primary">Explore Deals</a>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>“Best prices and fast delivery. My new laptop arrived the next day!”</p>
+                <span>- Aisha R.</span>
+            </div>
+            <div class="testimonial">
+                <p>“Great quality accessories. The support team is super helpful.”</p>
+                <span>- Ahmed K.</span>
+            </div>
+            <div class="testimonial">
+                <p>“ElectroMart is my go-to for all tech needs. Highly recommended!”</p>
+                <span>- Sarah M.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <img src="./Images/Logo.png" alt="ElectroMart Logo" class="footer-logo">
+                <h3>ElectroMart</h3>
+                <p>Your one-stop shop for the latest electronics.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./store.html">Store</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./support.html">Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> support@electromart.com</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/areeb20004" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://discord.gg/ST2KZttK7k" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/areeb-khan0" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 ElectroMart. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="./Javascript/global.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,111 @@
+/* ---------- HERO ---------- */
+.hero {
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+              url('./Images/hero-bg.jpg') center/cover no-repeat;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+.hero-content h1 span {
+  color: var(--color-primary);
+}
+.hero-content p {
+  color: var(--color-dark);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+}
+
+/* ---------- CATEGORIES ---------- */
+.categories {
+  padding: 4rem 2rem;
+  background: var(--color-light);
+  text-align: center;
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-dark);
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.category-card {
+  background: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.category-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.category-card h3 {
+  padding: 1rem;
+  color: var(--color-dark);
+}
+.category-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ---------- HIGHLIGHT ---------- */
+.highlight {
+  background: var(--color-dark);
+  color: var(--color-white);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.highlight-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.highlight-content p {
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+}
+
+/* ---------- TESTIMONIALS ---------- */
+.testimonials {
+  padding: 4rem 2rem;
+  background: var(--color-light);
+}
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.testimonial {
+  background: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+.testimonial span {
+  color: var(--color-primary);
+  font-weight: 600;
+}
