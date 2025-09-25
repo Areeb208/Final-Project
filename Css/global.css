@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +56,7 @@ body {
 
 .navbar-logo a {
   display: flex;
-  font-size: 20px;
+  font-size: 22px;
   align-items: center;
   color: var(--color-white);
   text-decoration: none;
@@ -65,8 +64,8 @@ body {
 }
 
 .navbar-logo-img {
-  height: 50px;
-  margin-right: 1px;
+  height: 40px;
+  margin-right: 6px;
 }
 
 /* Center Links */
@@ -141,7 +140,6 @@ body {
   height: 40px;
   border: 2px solid var(--color-primary);
   border-radius: 999px;
-  /* fully rounded pill shape */
   outline: none;
   background: var(--color-white);
   color: var(--color-dark);
