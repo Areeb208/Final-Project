@@ -7,26 +7,31 @@
     <title>ElectroMart | Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="image/png" href="./Images/Logo1.png">
     <link rel="stylesheet" href="./Css/global.css">
     <link rel="stylesheet" href="./Css/store.css">
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
+        <!-- Left: Logo -->
         <div class="navbar-logo">
             <a href="./index.html">
                 <img src="./Images/Logo1.png" alt="ElectroMart Logo" class="navbar-logo-img">
                 ElectroMart
             </a>
         </div>
+
+        <!-- Center: Links -->
         <ul class="navbar-links">
-            <li><a href="./store.html" class="active">Store</a></li>
+            <li><a href="./store.html">Store</a></li>
             <li><a href="./accessories.html">Accessories</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./support.html">Support</a></li>
         </ul>
+
+        <!-- Right:Icons -->
         <div class="navbar-icons">
             <div class="search-container">
                 <input type="text" class="search-input" placeholder="Search...">
@@ -34,9 +39,22 @@
                     <i class="fas fa-search"></i>
                 </button>
             </div>
+
             <a href="#" class="icon-link" aria-label="Login">
                 <i class="fas fa-user"></i>
             </a>
+
+        </div>
+        <div class="login-modal" id="loginModal">
+            <div class="login-content">
+                <span class="close-modal" id="closeLogin">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </div>
     </nav>
 
@@ -51,7 +69,14 @@
                 <option value="pc">PCs</option>
             </select>
         </div>
+
+        <!--  Cart Icon + Counter -->
+        <div class="cart-container">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount">0</span>
+        </div>
     </section>
+
 
     <!-- Store Grid -->
     <main class="store">
@@ -94,7 +119,7 @@
             <div class="product-card" data-category="pc" id="p6">
                 <img src="./Store-img/Office Pc.png" alt="Office PC">
                 <h3>Office PC Pro</h3>
-                <p>$599</p>
+                <p>$1,299</p>
                 <button class="btn-primary">Add to Cart</button>
             </div>
             <div class="product-card" data-category="laptop" id="p7">
@@ -115,17 +140,38 @@
                 <p>$1,679</p>
                 <button class="btn-primary">Add to Cart</button>
             </div>
+            <div class="product-card" data-category="phone" id="p10">
+                <img src="./Store-img/Xiaomi 17 Pro Max.png" alt="Xiaomi 17 Pro Max">
+                <h3>Xiaomi 17 Pro Max</h3>
+                <p>$970</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="pc" id="p11">
+                <img src="./Store-img/Phoenix Gaming Pc.png" alt="Phoenix Gaming Pc">
+                <h3>Phoenix Gaming Pc</h3>
+                <p>$1,599</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="laptop" id="p12">
+                <img src="./Store-img/Hp EliteBook.png" alt="HP EliteBook Ultra G1i">
+                <h3>HP EliteBook Ultra G1i</h3>
+                <p>$2,429</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer  -->
     <footer class="footer">
         <div class="footer-container">
+            <!-- Brand -->
             <div class="footer-brand">
                 <img src="./Images/Logo1.png" alt="ElectroMart Logo" class="footer-logo">
                 <h3>ElectroMart</h3>
                 <p>Your one-stop shop for the latest electronics.</p>
             </div>
+
+            <!-- Quick Links -->
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
@@ -135,25 +181,33 @@
                     <li><a href="./support.html">Support</a></li>
                 </ul>
             </div>
+
+            <!-- Contact -->
             <div class="footer-contact">
                 <h4>Contact Us</h4>
                 <p><i class="fas fa-envelope"></i> support@electromart.com</p>
                 <p><i class="fas fa-phone"></i> +92 300 1234567</p>
                 <div class="footer-socials">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/areeb20004" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://discord.gg/ST2KZttK7k" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/areeb-khan0" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
             <p>&copy; 2025 ElectroMart. All Rights Reserved.</p>
         </div>
-    </footer>
 
-    <script src="./Javascript/global.js"></script>
-    <script src="./Javascript/store.js"></script>
+        <script src="./Javascript/global.js"></script>
+        <script src="./Javascript/store.js"></script>
 
 </body>
 

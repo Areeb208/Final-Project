@@ -1,3 +1,4 @@
+// Search 
 const searchContainer = document.querySelector('.search-container');
 const searchBtn = document.querySelector('.search-btn');
 
@@ -6,9 +7,10 @@ searchBtn.addEventListener('click', () => {
 });
 
 
+// Login 
 const loginModal = document.getElementById('loginModal');
 const closeLogin = document.getElementById('closeLogin');
-const loginBtn = document.querySelector('.fa-user'); // your navbar login icon
+const loginBtn = document.querySelector('.fa-user'); 
 
 loginBtn.addEventListener('click', e => {
   e.preventDefault();

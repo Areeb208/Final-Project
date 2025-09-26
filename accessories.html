@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./Images/Logo1.png">
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="./Css/home.css">
+    <link rel="stylesheet" href="./Css/global.css">
+    <link rel="stylesheet" href="./Css/accessories.css">
 </head>
 
 <body>
@@ -58,7 +58,109 @@
         </div>
     </nav>
 
-        <!-- Footer  -->
+    <!-- Category Filter Bar -->
+    <section class="filter-bar">
+        <div class="filter-container">
+            <label for="categorySelect"><i class="fas fa-filter"></i> Category:</label>
+            <select id="categorySelect">
+                <option value="all">All</option>
+                <option value="phonec">Phone Cases</option>
+                <option value="ca">Computer Accessories</option>
+                <option value="wear">Wearables</option>
+            </select>
+        </div>
+
+        <!--  Cart Icon + Counter -->
+        <div class="cart-container">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount">0</span>
+        </div>
+    </section>
+
+    <!-- Accessories Grid -->
+    <main class="accessories">
+        <div class="product-grid">
+            <div class="product-card" data-category="ca" id="a1">
+                <img src="./Accessories-img/Gaming Keyboard.png" alt="White gaming keyboard">
+                <h3>Gaming Keyboard</h3>
+                <p>$399.00</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="phonec" id="a2">
+                <img src="./Accessories-img/Samsung cASE.png " alt="Samsung Fold Case">
+                <h3>Galaxy Z Fold7 Case</h3>
+                <p>$79.99</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="wear" id="a3">
+                <img src="./Accessories-img/Black headphones.png" alt="AirPods Max, Midnight">
+                <h3>AirPods Max, Midnight</h3>
+                <p>$549.00</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="ca" id="a4">
+                <img src="./Accessories-img/Gaming mouse.png" alt="Razer Gaming Mouse">
+                <h3>Razer Gaming Mouse</h3>
+                <p>$149.00</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="wear" id="a5">
+                <img src="./Accessories-img/Black Ear buds.png" alt="Samsung black Earbuds">
+                <h3>Galaxy Buds 3</h3>
+                <p>$189.99</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-category="phonec" id="a6">
+                <img src="./Accessories-img/Samsung cASE.png" alt="Samgsung Case">
+                <h3>Galaxy S25 Case</h3>
+                <p>$69.99</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="wear" id="a7">
+                <img src="./Accessories-img/Airpods 45.png" alt="Airpods 4">
+                <h3>AirPods 4</h3>
+                <p>$179.00</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="phonec" id="a8">
+                <img src="./Accessories-img/White Iphone Air case.png" alt="Iphone Air Case">
+                <h3>iPhone Air Case</h3>
+                <p>$49.99</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="ca" id="a9">
+                <img src="./Accessories-img/Mac keyboard.png" alt="Mac Keyboard">
+                <h3>Magic Keyboard</h3>
+                <p>$199.00</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="ca" id="a10">
+                <img src="./Accessories-img/Mac Mouse.png" alt="Mac Mouse">
+                <h3>Magic Mouse</h3>
+                <p>$99.00</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="phonec" id="a11">
+                <img src="./Images/MGFC4.png" alt="Iphone Case">
+                <h3>iPhone 17 Case</h3>
+                <p>$59.99</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="wear" id="a12">
+                <img src="./Accessories-img/White Headphones.png" alt="Beats white airpods">
+                <h3>Beats Studio Pro</h3>
+                <p>$349.49</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer  -->
     <footer class="footer">
         <div class="footer-container">
             <!-- Brand -->
@@ -106,6 +208,7 @@
 
 
     <script src="./Javascript/global.js"></script>
+    <script src="./Javascript/accessories.js"></script>
 
 </body>
 
