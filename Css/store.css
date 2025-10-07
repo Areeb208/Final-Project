@@ -26,7 +26,7 @@
 
 /* Cart Icon */
 .cart-container {
-    margin-left: auto;      
+    margin-left: auto;
     display: flex;
     align-items: center;
     color: var(--color-white);
@@ -48,8 +48,9 @@
 
 /* Added to Cart Button State */
 .product-card button.added {
-    background: #2ecc71;  
+    background: #2ecc71;
 }
+
 .product-card button.added:hover {
     background: #27ae60;
 }
@@ -124,3 +125,73 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .product-card img {
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+
+    .product-card {
+        padding: 0.9rem;
+        border-radius: 10px;
+    }
+
+    .product-card img {
+        height: 130px;
+        margin-bottom: 0.7rem;
+    }
+
+    .product-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .product-card p {
+        font-size: 0.9rem;
+    }
+
+    .product-card button {
+        font-size: 0.85rem;
+        padding: 0.45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+    }
+
+    .product-card {
+        padding: 0.7rem;
+        border-radius: 8px;
+    }
+
+    .product-card img {
+        height: 100px;
+        margin-bottom: 0.5rem;
+    }
+
+    .product-card h3 {
+        font-size: 0.85rem;
+    }
+
+    .product-card p {
+        font-size: 0.8rem;
+    }
+
+    .product-card button {
+        font-size: 0.75rem;
+        padding: 0.35rem;
+    }
+}

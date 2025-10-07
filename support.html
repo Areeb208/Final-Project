@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElectroMart</title>
+    <title>ElectroMart | Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./Images/Logo1.png">
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="./Css/home.css">
+    <link rel="stylesheet" href="./Css/global.css">
+    <link rel="stylesheet" href="./Css/support.css">
 </head>
 
 <body>
@@ -58,7 +58,50 @@
         </div>
     </nav>
 
-        <!-- Footer  -->
+    <!-- Header -->
+    <section class="support-header">
+        <h1>Support Center</h1>
+        <p>Need help? We're here for you. Find answers to common questions or reach out directly to our team.</p>
+    </section>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-item"
+            data-answer="Click on the Sign Up button at the top-right of the page and fill out the form with your details.">
+            <p class="faq-question">How do I create an account?</p>
+        </div>
+        <div class="faq-item"
+            data-answer="Register as a seller by selecting 'Become a Seller' in your account dashboard and follow the setup steps.">
+            <p class="faq-question">How do I sell my products on ElectroMart?</p>
+        </div>
+        <div class="faq-item" data-answer="We support credit/debit cards, PayPal, and secure wallet payments.">
+            <p class="faq-question">What payment methods do you accept?</p>
+        </div>
+        <div class="faq-item"
+            data-answer="Go to 'My Orders' in your profile to view shipping updates and tracking details.">
+            <p class="faq-question">How can I track my order?</p>
+        </div>
+    </section> <!-- FAQ Modal -->
+    <div class="faq-modal" id="faqModal">
+        <div class="faq-modal-content"> <span class="faq-close">&times;</span>
+            <h3 class="faq-modal-question"></h3>
+            <p class="faq-modal-answer"></p>
+        </div>
+    </div>
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you couldn't find your answer in the FAQ, reach out to us below.</p>
+        <form class="contact-form"> <input type="text" placeholder="Your Name" required> <input type="email"
+                placeholder="Your Email" required> <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- Footer CTA -->
+    <section class="cta-section">
+        <h2>Need Urgent Help?</h2>
+        <p>Our support team is available 24/7 for critical issues.</p> <a href="#">Live Chat Now</a>
+    </section>
+    <!-- Footer  -->
     <footer class="footer">
         <div class="footer-container">
             <!-- Brand -->
@@ -106,6 +149,7 @@
 
 
     <script src="./Javascript/global.js"></script>
+    <script src="./Javascript/support.js"></script>
 
 </body>
 
