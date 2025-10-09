@@ -381,7 +381,8 @@ footer .footer-socials a:focus-visible {
     gap: 0.6rem;
   }
 
-  .icon-link, .search-btn {
+  .icon-link,
+  .search-btn {
     font-size: 1.2rem;
   }
 
@@ -451,7 +452,8 @@ footer .footer-socials a:focus-visible {
   }
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100%;
 }
